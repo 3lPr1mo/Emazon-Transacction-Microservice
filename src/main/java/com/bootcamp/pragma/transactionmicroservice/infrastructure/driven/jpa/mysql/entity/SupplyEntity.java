@@ -20,13 +20,13 @@ public class SupplyEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "user_id", nullable = false)
-    private Long userId;
     @Column(name = "article_id", nullable = false)
     private Long articleId;
     @Column(name = "quantity", nullable = false)
     private Integer quantity;
     @Column(name = "_date")
     private LocalDateTime date;
+    @Column(name = "restock_date")
+    private LocalDateTime restockDate;
 
 }
